@@ -13,7 +13,11 @@ namespace Vidly.Controllers
         // GET: Movies
         public ActionResult Random()
         {
-            var movie = new Movie() { Name = "Shrek!" };
+            var movies = new List<Movie>
+            {
+                new Movie {Name = "Shrek" },
+                new Movie {Name = "Wall-e"}
+            };
 
             var customers = new List<Customer>
             {
@@ -23,7 +27,7 @@ namespace Vidly.Controllers
 
             var viewModel = new RandomMovieViewModel
             {
-                Movie = movie,
+                Movies = movies,
                 Customers = customers
             };
 
@@ -47,17 +51,35 @@ namespace Vidly.Controllers
             return Content("id= " + id);
         }
 
-        public ActionResult Index(int? pageIndex, string sortBy)
+        public ActionResult Index()//int? pageIndex, string sortBy)
         {
-            if (!pageIndex.HasValue)
-                pageIndex = 1;
+            /*            if (!pageIndex.HasValue)
+                            pageIndex = 1;
 
-            if (String.IsNullOrWhiteSpace(sortBy))
-                sortBy = "Name";
-            
-            return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+                        if (String.IsNullOrWhiteSpace(sortBy))
+                            sortBy = "Name";
+
+                        // return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+             */
+
+            var movies = new  List<Movie>
+            {
+                new Movie { Name = "Shrek"},
+                new Movie { Name = "Wall-e" }
+            };
+
+            var customers = new List<Customer>
+            {
+                new Customer {Name = "Customer 1"},
+                new Customer {Name = "Customer 2"}
+            };
+
+            var viewModel = new RandomMovieViewModel
+            {
+                Movies = movies,
+                Customers = customers
+            };
+            return View(viewModel);
         }
-
-
     }
 }
