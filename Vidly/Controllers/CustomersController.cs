@@ -10,14 +10,17 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
+
+
+
         // GET: Customers
         public ActionResult Index()
         {
 
             var customers = new List<Customer>
             {
-              //  new Customer {Name = "Customer 1"},
-              //  new Customer {Name = "Customer 2"}
+                new Customer {Name = "Customer 1"},
+                new Customer {Name = "Customer 2"}
             };
 
             var viewModel = new RandomMovieViewModel
@@ -28,5 +31,9 @@ namespace Vidly.Controllers
             return View(viewModel);
 
         }
+
+
+
+
     }
 }
