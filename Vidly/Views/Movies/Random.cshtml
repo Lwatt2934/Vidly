@@ -1,21 +1,24 @@
 ﻿@model Vidly.ViewModels.RandomMovieViewModel
-
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@{
-    var className = Model.Customers.Count > 1 ? "popular" : null;
-}
+
 @*
-    <br />
+    This is a comment
+    On multiple lines    
 *@
+
+
+@{
+    var className = Model.Customers.Count > 0 ? "popular" : null;
+}
 
 <h2 class="@className">@Model.Movie.Name</h2>
 
 @if (Model.Customers.Count == 0)
 {
-    <p>No one has rented this movie.</p>
+    <text>No one has rented this movie before.</text>
 }
 else
 {
@@ -23,7 +26,7 @@ else
         @foreach (var customer in Model.Customers)
         {
             <li>@customer.Name</li>
-
         }
     </ul>
 }
+
