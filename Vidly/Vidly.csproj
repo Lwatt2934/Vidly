@@ -203,9 +203,34 @@
     <Compile Include="Migrations\202002242148481_AddMembershipTypeName2.designer.cs">
       <DependentUpon>202002242148481_AddMembershipTypeName2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002251348224_ChangeColumnName.cs" />
+    <Compile Include="Migrations\202002251348224_ChangeColumnName.designer.cs">
+      <DependentUpon>202002251348224_ChangeColumnName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002251353286_SqlAdd.cs" />
+    <Compile Include="Migrations\202002251353286_SqlAdd.designer.cs">
+      <DependentUpon>202002251353286_SqlAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002251413255_Birthdate.cs" />
+    <Compile Include="Migrations\202002251413255_Birthdate.designer.cs">
+      <DependentUpon>202002251413255_Birthdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002251616465_Genre.cs" />
+    <Compile Include="Migrations\202002251616465_Genre.designer.cs">
+      <DependentUpon>202002251616465_Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002251620289_Genre1.cs" />
+    <Compile Include="Migrations\202002251620289_Genre1.designer.cs">
+      <DependentUpon>202002251620289_Genre1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002251733299_SeedGenre.cs" />
+    <Compile Include="Migrations\202002251733299_SeedGenre.designer.cs">
+      <DependentUpon>202002251733299_SeedGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -378,6 +403,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -411,6 +438,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002242148481_AddMembershipTypeName2.resx">
       <DependentUpon>202002242148481_AddMembershipTypeName2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251348224_ChangeColumnName.resx">
+      <DependentUpon>202002251348224_ChangeColumnName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251353286_SqlAdd.resx">
+      <DependentUpon>202002251353286_SqlAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251413255_Birthdate.resx">
+      <DependentUpon>202002251413255_Birthdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251616465_Genre.resx">
+      <DependentUpon>202002251616465_Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251620289_Genre1.resx">
+      <DependentUpon>202002251620289_Genre1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002251733299_SeedGenre.resx">
+      <DependentUpon>202002251733299_SeedGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

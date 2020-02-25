@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddMembershipTypeName2 : DbMigration
+    public partial class SqlAdd : DbMigration
     {
         public override void Up()
         {
