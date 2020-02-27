@@ -243,6 +243,14 @@
     <Compile Include="Migrations\202002261704358_testclass21.designer.cs">
       <DependentUpon>202002261704358_testclass21.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002272054141_datTime.cs" />
+    <Compile Include="Migrations\202002272054141_datTime.designer.cs">
+      <DependentUpon>202002272054141_datTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002272105591_datTime1.cs" />
+    <Compile Include="Migrations\202002272105591_datTime1.designer.cs">
+      <DependentUpon>202002272105591_datTime1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -254,6 +262,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\NewCustomerViewModel.cs" />
+    <Compile Include="ViewModels\NewMovieViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -424,6 +433,7 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -487,6 +497,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002261704358_testclass21.resx">
       <DependentUpon>202002261704358_testclass21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002272054141_datTime.resx">
+      <DependentUpon>202002272054141_datTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002272105591_datTime1.resx">
+      <DependentUpon>202002272105591_datTime1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
