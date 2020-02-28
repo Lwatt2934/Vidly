@@ -251,6 +251,14 @@
     <Compile Include="Migrations\202002272105591_datTime1.designer.cs">
       <DependentUpon>202002272105591_datTime1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002281927427_Section5Exercise.cs" />
+    <Compile Include="Migrations\202002281927427_Section5Exercise.designer.cs">
+      <DependentUpon>202002281927427_Section5Exercise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002282010401_Section5Exercise1.cs" />
+    <Compile Include="Migrations\202002282010401_Section5Exercise1.designer.cs">
+      <DependentUpon>202002282010401_Section5Exercise1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
@@ -504,6 +512,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002272105591_datTime1.resx">
       <DependentUpon>202002272105591_datTime1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002281927427_Section5Exercise.resx">
+      <DependentUpon>202002281927427_Section5Exercise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002282010401_Section5Exercise1.resx">
+      <DependentUpon>202002282010401_Section5Exercise1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
