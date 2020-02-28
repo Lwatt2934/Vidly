@@ -10,7 +10,7 @@ namespace Vidly.Models
     {
         public int Id { get; set; }
         [Required]
-        [StringLength(255)]
+        [StringLength(255, ErrorMessage = "Name is too long.")]
         public string Name { get; set; }
         [Display(Name = "Subscribed to Newsletter?")]
         public bool IsSubscribedToNewsletter { get; set; }
@@ -18,7 +18,7 @@ namespace Vidly.Models
         [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }
         [Display(Name = "Date of Birth")]
-//        [Min18YearsIfAMember]
+        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }
