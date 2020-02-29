@@ -259,6 +259,10 @@
     <Compile Include="Migrations\202002282010401_Section5Exercise1.designer.cs">
       <DependentUpon>202002282010401_Section5Exercise1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002291508319_Section5.cs" />
+    <Compile Include="Migrations\202002291508319_Section5.designer.cs">
+      <DependentUpon>202002291508319_Section5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
@@ -518,6 +522,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002282010401_Section5Exercise1.resx">
       <DependentUpon>202002282010401_Section5Exercise1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002291508319_Section5.resx">
+      <DependentUpon>202002291508319_Section5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
