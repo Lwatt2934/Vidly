@@ -11,7 +11,7 @@ namespace Vidly.Dtos
         [StringLength(255, ErrorMessage = "Name is too long.")]
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
-        public MembershipType MembershipType { get; set; }
+      //  public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
 //        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
