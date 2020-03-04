@@ -20,7 +20,7 @@
         <p>
             @Html.ActionLink("New Customer", "New", "Customers", null, new { @class = "btn btn-primary" })
         </p>
-        <table id="customers" class="table table-bordered table-hover">
+        <table id="customers" class="table table-bordered table-hover" width="800">
             <thead>
                 <tr>
                     <th>Customer</th>
@@ -40,6 +40,7 @@
                         url: "/api/customers",
                         dataSrc: ""
                     },
+                    "dom": '<<"top"fr>t<"bottom"lp><"clear">>',
                     columns: [
                         {
                             data: "name",
