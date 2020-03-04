@@ -11,7 +11,7 @@ namespace Vidly.Dtos
         [StringLength(255, ErrorMessage = "Name is too long.")]
         public string Name { get; set; }
 
-  //      public Genre Genre { get; set; }
+        public GenreDto Genre { get; set; }
 
         [Required]
         public byte GenreId { get; set; }
